@@ -1,0 +1,4 @@
+#!/bin/bash
+
+../bin/closuremc-proteins seq -n 100000 -d 2 -r -radi 10.0 -gam 0.866 -twi 11.5 -pic
+
