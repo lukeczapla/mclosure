@@ -1,10 +1,12 @@
-# mclosure - DNA ring closure with and without proteins
+# mclosure - Monte Carlo for DNA ring closure with and without proteins
 
-This is a CPU implementation of ring closure written in 2007
+This is a CPU implementation of ring closure written in 2007, it implements the 
+quadratic combination of half chains with a bin (bucket) search that reduces most 
+jobs to O(N) for sampling N^2 total chains.
 
 ## Installation
 
-The installation via command-line
+The installation via command-line on UNIX-like systems (Linux, OS X) with g++:
 
 ```
 cd src
@@ -24,8 +26,8 @@ based on Nhp6A from yeast.
 
 The program [DNAServer](https://github.com/lukeczapla/DNAServer) presents a 
 web application frontend to these simulation programs for visualizing 
-the resulting graphs and data and will automate running the command-line, 
-though each program in bin will output a help screen describing the parameters 
-to each command-line executable.
+the resulting graphs and data and will automate running the command-line.
+However, each program in bin will output a help screen describing the parameters 
+to each command-line executable and the example folder has sample input files.
 
 
